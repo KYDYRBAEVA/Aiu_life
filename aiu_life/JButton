@@ -10,10 +10,10 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 
-public class JButton extends JFrame
+public class JButtons extends JFrame
 {
     private static final long serialVersionUID = 1L;
-    public ButtonStylesTest()
+    public JButtons()
     {
         super("Интерфейсы");
         setDefaultCloseOperation( EXIT_ON_CLOSE );
