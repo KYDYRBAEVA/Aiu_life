@@ -1,0 +1,34 @@
+import java.util.*;
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+public class JButton2 extends JFrame 
+{
+    private static final long serialVersionUID = 1L;
+
+    private JToggleButton button;
+    private JPanel panelRadio, panelCheck;
+    
+    public JButton2()
+    {
+        super("Yправления");
+        setDefaultCloseOperation();
+        // Панель содержимого
+        Container container = getContentPane();
+        // Последовательное расположение
+        container.setLayout(new FlowLayout());
+        // Создание кнопки JToggleButton
+        button = new JToggleButton("Нажмите", false);
+        // Слушатель события о смене состояния
+        button.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+                String text = (button.isSelected()) ? "Отпустите" : 
+                                                      "Нажмите";
+                button.setText(text);
+                panelRadio.setVisible(!button.isSelected());
+                panelCheck.setVisible( button.isSelected());
+            }
+        });
+	
