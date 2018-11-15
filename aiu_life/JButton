@@ -19,7 +19,7 @@ public class JButtons extends JFrame
         setDefaultCloseOperation( EXIT_ON_CLOSE );
         // Устанавливаем последовательное расположение
         Container container = getContentPane();
-        container.setLayout(new FlowLayout( FlowLayout.RIGHT, 10, 10));
+        container.setLayout(new FlowLayout( FlowLayout.LEFT, 10, 10));
         // Простая кнопка
         JButton button = new JButton("Обычная кнопка");
         // Подключение слушателей событий
