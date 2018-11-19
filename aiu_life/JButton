@@ -17,15 +17,11 @@ public class JButtons extends JFrame
     {
         super("Интерфейсы");
         setDefaultCloseOperation( EXIT_ON_CLOSE );
-        // Устанавливаем последовательное расположение
         Container container = getContentPane();
         container.setLayout(new FlowLayout( FlowLayout.LEFT, 10, 10));
-        // Простая кнопка
-        JButton button = new JButton("Обычная кнопка");
-        // Подключение слушателей событий
-        button.addActionListener(new ListenerAction());
+        JButton button = new JButton("blue button");
+         button.addActionListener(new ListenerAction());
         button.addChangeListener(new ListenerChange());
-        // присоединение слушателя прямо на месте
         button.addItemListener(new ItemListener() {
            public void itemStateChanged(ItemEvent e) {
                System.out.println("Это событие мы не увидим");
@@ -39,6 +35,9 @@ public class JButtons extends JFrame
         button.setBorderPainted(false);
         button.setFocusPainted(false);
         button.setContentAreaFilled(false);
+        container.add(button);
+        button = new JButton(<html><h2><flot color=\"red"\>Gray button");
+        button.setBackgrount(Color.gray);
         container.add(button);
         
         
