@@ -15,14 +15,11 @@ public class JButton2 extends JFrame
     {
         super("Yправления");
         setDefaultCloseOperation();
-        // Панель содержимого
-        Container container = getContentPane();
-        // Последовательное расположение
+    	Container container = getContentPane();
         container.setLayout(new FlowLayout());
         // Создание кнопки JToggleButton
         button = new JToggleButton("Нажмите", false);
-        // Слушатель события о смене состояния
-        button.addItemListener(new ItemListener() {
+       	button.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 String text = (button.isSelected()) ? "Отпустите" : 
                                                       "Нажмите";
