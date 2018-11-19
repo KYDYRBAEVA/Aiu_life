@@ -28,4 +28,35 @@ public class JButton2 extends JFrame
                 panelCheck.setVisible( button.isSelected());
             }
         });
+	panelRadio = new JPanel(new GridLayout(0, 1, 0, 5));
+	panelRadio.setBorder(BorderFactory.createTitledBorder("news"));
+	String[] names1 ={"Monday", "Tuesday", "Wednesday"};
+	ButtonGroup bg1 = new ButtonGroup();
+	for (int i = 0; i < names1.length; i++) {
+		JRadioButton radio = new JRadioButton(names[i]);
+		panelRadio.add(radio);
+		bg1.add(radio);}
+	
+	panelCheck = new JPanel(new GridLayout(0, 1, 0, 5));
+	panelCheck.setBorder(BorderFactory.createTitledBorder("schedule"));
+	String[] names2 = { "com-17", "math-17", "med-17"};
+	ButtonGroup bg2 = new ButtonGroup();
+	for (int i = 0; i < names2.length; i++){
+		JCheckBox check = new JCheckBox(names2[i]);
+		panelCheck.add(check);
+		bg2.add(check);}
+	panelCheck.setVisible(false);
+	container.add(button1);
+	container.add(panelRadio);
+	contain.add(panelCheck);
+	
+	setSize(270, 170);
+	setVisible(true);
+	}
+	public static void main(String[] args){
+		new ButtonsTest();
+	}
+}
+	
+		
 	
