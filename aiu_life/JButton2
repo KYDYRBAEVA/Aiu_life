@@ -17,7 +17,7 @@ public class JButton2 extends JFrame
         setDefaultCloseOperation();
     	Container container = getContentPane();
         container.setLayout(new FlowLayout());
-        // Создание кнопки JToggleButton
+        ////
         button = new JToggleButton("Нажмите", false);
        	button.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
