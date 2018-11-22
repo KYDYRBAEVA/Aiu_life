@@ -21,8 +21,7 @@ public class JButton2 extends JFrame
         button = new JToggleButton("Нажмите", false);
        	button.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
-                String text = (button.isSelected()) ? "Отпустите" : 
-                                                      "Нажмите";
+                String text = (button.isSelected()) ? ;
                 button.setText(text);
                 panelRadio.setVisible(!button.isSelected());
                 panelCheck.setVisible( button.isSelected());
