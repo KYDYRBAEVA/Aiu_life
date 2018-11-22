@@ -39,6 +39,4 @@ public class JButtons extends JFrame
         button = new JButton(<html><h2><flot color=\"red"\>Gray button");
         button.setBackgrount(Color.gray);
         container.add(button);
-        
-        
-}
+        }
