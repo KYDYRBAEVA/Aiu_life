@@ -24,7 +24,7 @@ public class JButtons extends JFrame
         button.addChangeListener(new ListenerChange());
         button.addItemListener(new ItemListener() {
            public void itemStateChanged(ItemEvent e) {
-               System.out.println("Это событие мы не увидим");
+               System.out.println();
         }});
         control.add(button);
         button = new JButton();
