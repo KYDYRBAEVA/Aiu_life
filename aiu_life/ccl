@@ -8,3 +8,5 @@ class BigObject {
   } 
  public String toString() { return value+"";  } 
  /////
+ private void printLists(){
+ System.out.println("Strong references: 1");
