@@ -3,9 +3,8 @@ class BigObject {
   public BigObject(Integer pValue) { 
     value = pValue; 
   } 
-
-  protected void finalize() throws Throwable { 
+ protected void finalize() throws Throwable { 
     System.out.println("BigObject ("+value+") finalize()"); 
   } 
- 
-  public String toString() { return value+"";  } 
+ public String toString() { return value+"";  } 
+ /////
