@@ -17,13 +17,13 @@ public class JButton2 extends JFrame
         setDefaultCloseOperation();
     	Container container = getContentPane();
         container.setLayout(new FlowLayout());
-        ////
+        //
         button = new JToggleButton("Нажмите", false);
        	button.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 String text = (button.isSelected()) ? ;
                 button.setText(text);
-                panelRadio.setVisible(!button.isSelected());
+                panelRadio.setVisible( button.isSelected());
                 panelCheck.setVisible( button.isSelected());
             }
         });
@@ -49,7 +49,7 @@ public class JButton2 extends JFrame
 	container.add(panelRadio);
 	contain.add(panelCheck);
 	
-	setSize(270, 170);
+	setSize(280, 170);
 	setVisible(true);
 	}
 	public static void main(String[] args){
