@@ -49,7 +49,7 @@ public class JButton2 extends JFrame
 	container.add(panelRadio);
 	contain.add(panelCheck);
 	
-	setSize(280, 170);
+	setSize(281, 171);
 	setVisible(true);
 	}
 	public static void main(String[] args){
