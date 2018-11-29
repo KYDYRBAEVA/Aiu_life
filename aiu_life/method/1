@@ -1,7 +1,18 @@
-public String numberToString( Long number ) {
-	return Long.toString( number );
-}
-public String numberToString( BigDecimal number ) {
-	return number.toString();
+import java.util.*;
+import java.awt.*;
+import java.awt.event.*;
 
-}
+import javax.swing.*;
+	public String numberToString( Long number ) {
+		return Long.toString( number );
+	}
+	public String numberToString( BigDecimal number ) {
+		return number.toString();
+	}
+	public< T extends Number > String numberToString( T number ) {
+		return number.toString();
+	}
+	
+	
+
+
