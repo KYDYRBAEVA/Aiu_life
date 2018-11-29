@@ -1,0 +1,7 @@
+public String numberToString( Long number ) {
+	return Long.toString( number );
+}
+public String numberToString( BigDecimal number ) {
+	return number.toString();
+
+}
