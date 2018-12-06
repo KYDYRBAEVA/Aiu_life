@@ -1,0 +1,20 @@
+public static int size;
+
+    public static void ReadLong(char[] s,int[] a) {
+        int cnt;
+        if (s.length%4==0) {
+            cnt=s.length/4;
+        }
+        else {
+            cnt = (s.length+4-s.length%4)/4;
+        }
+
+        a[0]=cnt;
+        int num=1;
+        int ost=s.length%4;
+        int i=0;
+       while (s.length-i>ost) {
+            a[num] = Character.getNumericValue(s[i]) + Character.getNumericValue(s[i + 1]) * 10 + Character.getNumericValue(s[i + 2]) * 100 + Character.getNumericValue(s[i + 3]) * 1000;
+            i+=4;
+            num++;
+        }
